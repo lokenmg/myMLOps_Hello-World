@@ -13,9 +13,12 @@ on:					# It is used to automatically trigger a workflow.
 # on pull requests that target specific branches.
 # A workflow run is made up of one or more jobs that can run sequentially or in 
 # parallel.
+  repository_dispatch:
+    types: [predictionsjs]
 jobs:					# A workflow run is made up of one or more jobs,
 # which run in parallel by default. Each job runs
 # in a runner environment specified by runs-on.
+  
   # This workflow contains a single job called "build".
   build:
     runs-on: ubuntu-latest 	# The type of runner that the job will run on. 
