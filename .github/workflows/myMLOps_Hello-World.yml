@@ -14,7 +14,7 @@ on:					# It is used to automatically trigger a workflow.
 # A workflow run is made up of one or more jobs that can run sequentially or in 
 # parallel.
   repository_dispatch:
-    types: [predictionsjs]
+    types: [build]
 jobs:					# A workflow run is made up of one or more jobs,
 # which run in parallel by default. Each job runs
 # in a runner environment specified by runs-on.
